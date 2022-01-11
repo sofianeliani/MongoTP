@@ -1,0 +1,19 @@
+{
+  "name": "mongotp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sofianeliani/MongoTP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sofianeliani/MongoTP/issues"
+  },
+  "homepage": "https://github.com/sofianeliani/MongoTP#readme"
+}
