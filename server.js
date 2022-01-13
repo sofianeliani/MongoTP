@@ -20,9 +20,9 @@ try {
       }
     );
   
-  } catch (e) {
+} catch (e) {
     console.log("Could not connect");
-  }
+}
 
 const corsOptions = {
   origin: true,
