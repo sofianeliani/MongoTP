@@ -6,9 +6,9 @@ const app = express();
 const port = 3000;
 const db = require("./models");
 const connectionString  = "mongodb+srv://admin:admin@cluster0.ix1it.mongodb.net/Restaurants?retryWrites=true&w=majority";
+
+
 const server = require('http').Server(app);
-
-
 
 try {
     // Connexion au cluster MongoDB
