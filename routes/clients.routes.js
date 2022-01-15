@@ -19,6 +19,9 @@ module.exports = function(app) {
     
     var aggr = { type : "Point", coordinates : [ 42.944787, 4.904031 ]}
 
+    // this pipeline is an example for aggregate and geospaitale request
+    // we combine this queries for get the clients in Lyon localisation
+    // but we can remove query: parameters or $match parameter 
     var pipeline = [
         {
             $geoNear : {
@@ -34,6 +37,8 @@ module.exports = function(app) {
         }
     ]
 
+    // its a endpoint for use pipeline
+    // get all clients who as visit Lyon city
     app.get("/api/clientsvisitlyon", async (req, res) => {
         const clients = await Clients.aggregate(pipeline);
 
