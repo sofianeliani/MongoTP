@@ -8,6 +8,7 @@ const db = {};
 db.mongoose = mongoose;
 
 db.restaurants = require("./restaurants.model");
+db.clients = require("./clients.model");
 
 // Export du module db pour pouvoir l'appeler
 module.exports = db;
