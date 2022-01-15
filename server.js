@@ -38,6 +38,7 @@ app.use(bodyParser.urlencoded({ extended: true}));
 /* utilisation des routes (endpoints) */
 app.get('/', (req, res) => res.send({ message: "..."}))
 require('./routes/restaurants.routes')(app);
+require('./routes/clients.routes')(app);
 
 
 server.listen(port, () => console.log(`listening ok`))
